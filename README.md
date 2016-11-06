@@ -4,7 +4,7 @@ __winAnsible__ is an attempt to create a Windows MSI package to an experimental 
 
 ## REQUIREMENTS
 
-To port Ansible and run on Windows requires a number of tools to create the appropriate build environment to work with :
+To port Ansible and make it run on Windows requires a number of tools to create the appropriate build environment to work with :
 
 * __MSYS2__ - independent rewrite of MSYS, based on modern Cygwin (POSIX compatibility layer) and MinGW-w64 with the aim of better interoperability with native Windows software.
 * __git__ - distributed revision control system aimed at speed,data integrity,and support for distributed, non-linear workflows.
