@@ -2,7 +2,7 @@
 
 winAnsible is an attempt to create a Windows MSI package to an experimental Ansible implementation on Windows.
 
-### REQUIREMENTS
+## REQUIREMENTS
 
 winAnsible uses a number of open source projects to work properly:
 
@@ -11,7 +11,7 @@ winAnsible uses a number of open source projects to work properly:
 * [pacman] - ported package management system from Archlinux
 * [python and python-pip] - Python programming language, use pip to install and manage software packages written in Python.
 
-### Installation
+## Installation
 
 winAnsible requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
 
@@ -19,17 +19,19 @@ Download and extract the [latest pre-built release](http://repo.msys2.org/distri
 
 Start the terminal.
 
-Installation Restrictions:
----
+##### Installation Restrictions:
 + MSYS2 can't be installed on FAT* partitions.
 + Current MSYS2 can't be installed on Windows XP anymore.
 
 ### Difference between MSYS2 and MinGW
 >MSYS2 refers to the libraries and programs that use the POSIX emulation layer ("msys2 runtime", derived from Cygwin's >cygwin1.dll). It is very easy to port libraries and programs from Unix/Linux because most of the POSIX semantics is emulated >reasonably well, for example the fork() function. Bash and Perl are examples of MSYS2 programs.
 
+
 >MinGW refers to libraries and programs that are compiled using GNU tools but do not require any POSIX semantics, instead relying >on the standard Win32 API and the C runtime library. MinGW stands for "Minimal GNU for Windows". Examples: cURL (a library to talk >to remote servers via HTTP(S), (S)FTP, etc), emacs, Inkscape, etc
 
+
 >The POSIX emulation layer of MSYS2 binaries is convenient, but comes at a cost: Typically, MSYS2 programs are noticably slower >than their MinGW counterparts (if there are such counterparts). As a consequence, the Git for Windows project tries to provide as >many components as possible as MinGW binaries.
+
 
 ```sh
 $ pacman -Sy pacman
@@ -43,7 +45,7 @@ $ ansible --version
 
 For production environments...
 
-### Todos
+## Todos
 
  - Complete Ansible install automation as a script ansible-on-win.sh
  - Reaserch on InstallForge and alternatives for Windows Software Packaging
