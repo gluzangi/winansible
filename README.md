@@ -9,7 +9,7 @@ winAnsible uses a number of open source projects to work properly:
 * [MSYS2] - independent rewrite of MSYS, based on modern Cygwin (POSIX compatibility layer) and MinGW-w64 with the aim of better interoperability with native Windows software.
 * [git] - distributed revision control system aimed at speed,data integrity,and support for distributed, non-linear workflows.
 * [pacman] - ported package management system from Archlinux
-* [python and python-pip] - Python programming language and pip in order to install Python packages from PyPI.
+* [python and python-pip] - Python programming language, use pip to install and manage software packages written in Python.
 
 ### Installation
 
@@ -23,7 +23,7 @@ Install the dependencies and start the terminal.
 $ pacman -Sy base-devel libffi libffi-devel pkg-config gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 $ git clone https://gitlab.com/gluzangi/winansible.git $HOME/
 $ cp $HOME/devops/ansible.localhost/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
-$ mkdir /usr/local/src/ ; cd /usr/local/src/ ; wget https://bootstrap.pypa.io/get-pip.py ; python get-pip.py
+$ curl https://bootstrap.pypa.io/get-pip.py | python
 $ pip install -U -r $HOME/devops/ansible.pip.requirements.txt
 $ ansible --version
 ```
