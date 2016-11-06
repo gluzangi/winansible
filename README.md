@@ -1,14 +1,15 @@
 # Ansible-On-Windows README.md
 
-winAnsible is an attempt to create a self contained Ansible implementation on Windows.
+winAnsible is an attempt to create a Windows MSI package to an experimental Ansible implementation on Windows.
 
 ### REQUIREMENTS
 
 winAnsible uses a number of open source projects to work properly:
 
 * [MSYS2] - independent rewrite of MSYS, based on modern Cygwin (POSIX compatibility layer) and MinGW-w64 with the aim of better interoperability with native Windows software.
+* [git] - distributed revision control system aimed at speed,data integrity,and support for distributed, non-linear workflows.
 * [pacman] - ported package management system from Archlinux
-* [python and python-pip] - Markdown parser done right. Fast and easy to extend.
+* [python and python-pip] - Python programming language and pip in order to install Python packages from PyPI.
 
 ### Installation
 
@@ -20,7 +21,7 @@ Install the dependencies and start the terminal.
 
 ```sh
 $ pacman -Sy base-devel libffi libffi-devel pkg-config gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
-$ git clone https://gitlab.com/gluzangi/winansible.git $HOME/ 
+$ git clone https://gitlab.com/gluzangi/winansible.git $HOME/
 $ cp $HOME/devops/ansible.localhost/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 $ mkdir /usr/local/src/ ; cd /usr/local/src/ ; wget https://bootstrap.pypa.io/get-pip.py ; python get-pip.py
 $ pip install -U -r $HOME/devops/ansible.pip.requirements.txt
@@ -49,3 +50,4 @@ MIT or GPL
 
    [gluzangi]: <https://github.com/gluzangi>
    [gitlab-repo]: <https://gitlab.com/gluzangi/winansible>
+   [Python-pip]: <https://packaging.python.org/installing/#installing-from-pypi>
