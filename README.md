@@ -11,7 +11,7 @@ winAnsible uses a number of open source projects to work properly:
 * [pacman] - ported package management system from Archlinux
 * [python and python-pip] - Python programming language, use pip to install and manage software packages written in Python.
 
-## Porting To Windows Environment Preparation
+#### Porting To Windows Environment Preparation
 
 1. winAnsible requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
 
