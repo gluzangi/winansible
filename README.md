@@ -1,6 +1,6 @@
 # Ansible-On-Windows README.md
 
-__winAnsible__ is an attempt to create a Windows MSI package to an experimental Ansible implementation on Windows. In the meantime the entire manual process is distilled over the following steps.
+__winAnsible__ is an attempt to create a Windows MSI package to an experimental Ansible implementation on Windows. In the meantime the entire manual process running Ansible-On-Windows is distilled over the following steps.
 
 ## REQUIREMENTS
 
