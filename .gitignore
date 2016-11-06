@@ -1,0 +1,30 @@
+###
+# SSH
+#
+#.ssh/
+.ssh.cgi/
+
+###
+# Vagrant 
+#
+.vagrant/
+
+###
+# Ansible 
+#
+.ansible/
+.cache/
+.ansible_galaxy
+*.retry
+
+###
+# Use wildcards as well
+#
+*~
+*.swp
+*.viminfo
+
+###
+# Skip /tmp
+# 
+/tmp/*

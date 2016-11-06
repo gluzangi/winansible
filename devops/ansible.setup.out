@@ -1,0 +1,74 @@
+Using /home/gerald.luzangi/.ansible.cfg as config file
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/system/ping.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: gerald.luzangi
+<localhost> EXEC /bin/bash -c '( umask 77 && mkdir -p "` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464 `" && echo ansible-tmp-1478378487.54-128323621810464="` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464 `" ) && sleep 0'
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/system/ping.py
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/system/ping.py
+<192.168.1.110> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/system/ping.py
+<192.168.1.200> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.120> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.200> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 192.168.1.200 '/bin/bash -c '"'"'( umask 77 && mkdir -p "` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891 `" && echo ansible-tmp-1478378487.54-77481625104891="` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891 `" ) && sleep 0'"'"''
+<192.168.1.110> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 192.168.1.110 '/bin/bash -c '"'"'( umask 77 && mkdir -p "` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200 `" && echo ansible-tmp-1478378487.54-237987286017200="` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200 `" ) && sleep 0'"'"''
+<192.168.1.120> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 192.168.1.120 '/bin/bash -c '"'"'( umask 77 && mkdir -p "` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724 `" && echo ansible-tmp-1478378487.54-203906407719724="` echo $HOME/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724 `" ) && sleep 0'"'"''
+<192.168.1.110> PUT /tmp/tmp9xKeXf TO /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200/ping.py
+<192.168.1.110> SSH: EXEC sftp -b - -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 '[192.168.1.110]'
+<192.168.1.200> PUT /tmp/tmpSdcdbW TO /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891/ping.py
+<192.168.1.200> SSH: EXEC sftp -b - -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 '[192.168.1.200]'
+<192.168.1.120> PUT /tmp/tmpRXwwyg TO /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724/ping.py
+<192.168.1.120> SSH: EXEC sftp -b - -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 '[192.168.1.120]'
+<localhost> PUT /tmp/tmpgvSGjD TO /home/gerald.luzangi/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464/ping.py
+<localhost> EXEC /bin/bash -c 'chmod u+x /home/gerald.luzangi/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464/ /home/gerald.luzangi/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464/ping.py && sleep 0'
+<192.168.1.110> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.110> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 192.168.1.110 '/bin/bash -c '"'"'chmod u+x /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200/ /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200/ping.py && sleep 0'"'"''
+<localhost> EXEC /bin/bash -c 'sudo -H -S -n -u root /bin/bash -c '"'"'echo BECOME-SUCCESS-kkmrrvzpgolbnubjdxjpqkdhfwinktza; /usr/bin/python /home/gerald.luzangi/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464/ping.py; rm -rf "/home/gerald.luzangi/.ansible/tmp/ansible-tmp-1478378487.54-128323621810464/" > /dev/null 2>&1'"'"' && sleep 0'
+<192.168.1.200> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.200> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 192.168.1.200 '/bin/bash -c '"'"'chmod u+x /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891/ /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891/ping.py && sleep 0'"'"''
+<192.168.1.120> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.120> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 192.168.1.120 '/bin/bash -c '"'"'chmod u+x /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724/ /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724/ping.py && sleep 0'"'"''
+<192.168.1.110> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.110> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 -tt 192.168.1.110 '/bin/bash -c '"'"'sudo -H -S -n -u root /bin/bash -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-oggkdvbzviawqhcmqngcljhqdbsolfbe; /usr/bin/python /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200/ping.py; rm -rf "/home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-237987286017200/" > /dev/null 2>&1'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+localhost | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "invocation": {
+        "module_name": "ping"
+    }, 
+    "module_stderr": "/bin/bash: sudo: command not found\n", 
+    "module_stdout": "", 
+    "msg": "MODULE FAILURE"
+}
+<192.168.1.120> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.120> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 -tt 192.168.1.120 '/bin/bash -c '"'"'sudo -H -S -n -u root /bin/bash -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-oibighbtqpsqsrkznwtadcvrihtacxzl; /usr/bin/python /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724/ping.py; rm -rf "/home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-203906407719724/" > /dev/null 2>&1'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+<192.168.1.200> ESTABLISH SSH CONNECTION FOR USER: gluzangi
+<192.168.1.200> SSH: EXEC ssh -C -o ControlMaster=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=gluzangi -o ConnectTimeout=10 -tt 192.168.1.200 '/bin/bash -c '"'"'sudo -H -S -n -u root /bin/bash -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-qklebarsujuazizcoqlsfxnwjbdlebkd; /usr/bin/python /home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891/ping.py; rm -rf "/home/gluzangi/.ansible/tmp/ansible-tmp-1478378487.54-77481625104891/" > /dev/null 2>&1'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+192.168.1.110 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": null
+        }, 
+        "module_name": "ping"
+    }, 
+    "ping": "pong"
+}
+192.168.1.120 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": null
+        }, 
+        "module_name": "ping"
+    }, 
+    "ping": "pong"
+}
+192.168.1.200 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": null
+        }, 
+        "module_name": "ping"
+    }, 
+    "ping": "pong"
+}
