@@ -32,10 +32,10 @@ For production environments...
 
 ### Todos
 
- - Write Tests
- - Rethink Github Save
+ - Complete Ansible install automation as a script ansible-on-win.sh
+ - Reaserch on InstallForge and alternatives for Windows Software Packaging
+ - Rethink Github Repos
  - Add Code Comments
- - Add Night Mode
 
 License
 ----
@@ -51,3 +51,4 @@ MIT or GPL
    [gluzangi]: <https://github.com/gluzangi>
    [gitlab-repo]: <https://gitlab.com/gluzangi/winansible>
    [Python-pip]: <https://packaging.python.org/installing/#installing-from-pypi>
+   [InstallForge]: <http://www.installforge.net/>
