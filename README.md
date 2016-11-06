@@ -21,7 +21,7 @@ Install the dependencies and start the terminal.
 ```sh
 $ pacman -Sy base-devel libffi libffi-devel pkg-config gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 $ cp $HOME/devops/ansible.localhost/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
-$ mkdir /usr/local/src/ ; cd /usr/local/src/ ; wget https://bootstrap.pypa.io/get-pip.py
+$ mkdir /usr/local/src/ ; cd /usr/local/src/ ; wget https://bootstrap.pypa.io/get-pip.py ; python get-pip.py
 $ pip install -U -r $HOME/devops/ansible.pip.requirements.txt
 $ ansible --version
 ```
