@@ -11,13 +11,13 @@ winAnsible uses a number of open source projects to work properly:
 * [pacman] - ported package management system from Archlinux
 * [python and python-pip] - Python programming language, use pip to install and manage software packages written in Python.
 
-## Installation
+## Porting To Windows Environment Preparation
 
-winAnsible requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
+1. winAnsible requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
 
-Download and extract the [latest pre-built release](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20161025.exe).
+2. Download and extract the [latest pre-built release](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20161025.exe).
 
-Start the terminal.
+3. Start the MSYS2 terminal.
 
 ##### Installation Restrictions:
 + MSYS2 can't be installed on FAT* partitions.
@@ -32,6 +32,7 @@ Start the terminal.
 
 >The POSIX emulation layer of MSYS2 binaries is convenient, but comes at a cost: Typically, MSYS2 programs are noticably slower >than their MinGW counterparts (if there are such counterparts). As a consequence, the Git for Windows project tries to provide as many components as possible as MinGW binaries.
 
+## Ansible On Windows Installation
 
 ```sh
 $ pacman -Sy pacman
