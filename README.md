@@ -1,10 +1,10 @@
 # Ansible-On-Windows README.md
 
-_winAnsible_ is an attempt to create a Windows MSI package to an experimental Ansible implementation on Windows.
+__winAnsible__ is an attempt to create a Windows MSI package to an experimental Ansible implementation on Windows.
 
 ## REQUIREMENTS
 
-_winAnsible_ uses a number of open source projects to work properly:
+__winAnsible__ uses a number of open source projects to work properly:
 
 * [MSYS2] - independent rewrite of MSYS, based on modern Cygwin (POSIX compatibility layer) and MinGW-w64 with the aim of better interoperability with native Windows software.
 * [git] - distributed revision control system aimed at speed,data integrity,and support for distributed, non-linear workflows.
@@ -13,7 +13,7 @@ _winAnsible_ uses a number of open source projects to work properly:
 
 #### Porting To Windows Environment Preparation
 
-1. _winAnsible_ requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
+1. __winAnsible__ requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
 
 2. Download and extract the [latest pre-built release](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20161025.exe).
 
