@@ -13,7 +13,7 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 
 #### Porting To Windows Environment Preparation
 
-1. __winAnsible__ requires a preinstallation of [MSYS2](http://msys2.github.io/) to run.
+1. __winAnsible__ will require a preinstallation of [MSYS2](http://msys2.github.io/) to run.
 
 2. Download and extract the [latest pre-built release](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20161025.exe).
 
