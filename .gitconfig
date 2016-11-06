@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = U-CGI\gerald.luzangi
+#	email = gerald.luzangi@CANL-5KLZH72.corp.ad.cginet
+#
+	name 	= Gerald Luzangi
+	email 	= gerald.luzangi@gmail.com
