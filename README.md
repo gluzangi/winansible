@@ -45,7 +45,7 @@ $ ansible --version
 ```
 ##### Known Ansible Limitation:
 Mostly are SSH related features that have been observed to be missing (or need a workaround)
-+  `ControlPath where` to store the “control socket” for the multiplexed connections.
++  `ControlPath` to store the “control socket” for the multiplexed connections.
 +  `ControlMaster` to activates multiplexing. SSH will try to use a master connection if one exists.
 +  `ControlPersist` to keep the master connection alive for the specified period of time after it has remained idle (no connections). After that time, the master connection will be closed.
 
