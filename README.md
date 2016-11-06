@@ -6,10 +6,10 @@ __winAnsible__ is an attempt to create a Windows MSI package to an experimental 
 
 __winAnsible__ uses a number of open source projects to work properly:
 
-* [MSYS2] - independent rewrite of MSYS, based on modern Cygwin (POSIX compatibility layer) and MinGW-w64 with the aim of better interoperability with native Windows software.
-* [git] - distributed revision control system aimed at speed,data integrity,and support for distributed, non-linear workflows.
-* [pacman] - ported package management system from Archlinux
-* [python and python-pip] - Python programming language, use pip to install and manage software packages written in Python.
+* __MSYS2__ - independent rewrite of MSYS, based on modern Cygwin (POSIX compatibility layer) and MinGW-w64 with the aim of better interoperability with native Windows software.
+* __git__ - distributed revision control system aimed at speed,data integrity,and support for distributed, non-linear workflows.
+* __pacman__ - ported package management system from Archlinux
+* __python and python-pip__ - Python programming language, use pip to install and manage software packages written in Python.
 
 #### Porting To Windows Environment Preparation
 
