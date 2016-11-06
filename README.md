@@ -43,8 +43,14 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python
 $ pip install -U -r $HOME/devops/ansible.pip.requirements.txt
 $ ansible --version
 ```
+##### Known Ansible Limitation:
+Mostly are SSH related features that have been observed to be missing (or need a workaround)
++  `ControlPath where` to store the “control socket” for the multiplexed connections.
++  `ControlMaster` to activates multiplexing. SSH will try to use a master connection if one exists.
++  `ControlPersist` to keep the master connection alive for the specified period of time after it has remained idle (no connections). After that time, the master connection will be closed.
 
-For production environments...
+## For Production Environments
+_A Windows Installer with automated script to prepare **ALL** required packages to complete a fully functional Ansible-On-Windows install_
 
 ## Todos
 
