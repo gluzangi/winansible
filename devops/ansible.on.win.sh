@@ -76,8 +76,8 @@ if [ -f /etc/ansible-on-win.installed ]
     ##
     # Install Ansible On Windows Packages To Resolve Library Dependencies
     ##
-    # pacman -Sy pacman
-    pacman -Syu base-devel curl libffi libffi-devel gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
+    # pacman -Sy --noconfirm pacman
+    pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 
     ##
     # Fetch Ansible On Windows Related Fixes From The Repo
@@ -99,8 +99,8 @@ if [ -f /etc/ansible-on-win.installed ]
     ###
     # Set Ansible-On-Window Status
     ###
-    BOOTSTRAP_ANSIBLE_UPDATE=1
-    touch /etc/ansible-on-win.installed
+    #BOOTSTRAP_ANSIBLE_UPDATE=1
+    #touch /etc/ansible-on-win.installed
 
     #Set this script to run at shell startup
     #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.zshrc
