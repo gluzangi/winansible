@@ -59,11 +59,9 @@ if [ -f /etc/ansible-on-win.installed ]
     #source ./hacking/env-setup
     cd $CURRENT_DIR
 
-	echo "Update Ansible Vagrant Shims in bin Directory"
-	#cp -r $HOME/ansible-on-win/ansible-playbook.bat $HOME/ansible/bin/ansible-playbook.bat
-
-    echo "Remember to setup the ssh-agent."
-
+    echo "Ansible-On-Windows Upgrade Completed.\n"
+    echo "Remember to setup the ssh-agent.\n"
+    echo "Please restart MSYS-SHELL. \n"
   else
     #Replace babun sudo with new fake sudo for Ansible, throwing way all sudo args.
     #echo "#!/usr/bin/env bash" > /usr/bin/sudo
@@ -78,7 +76,7 @@ if [ -f /etc/ansible-on-win.installed ]
     ##
     # Install Ansible On Windows Packages To Resolve Library Dependencies
     ##
-    pacman -Sy pacman
+    # pacman -Sy pacman
     pacman -Syu base-devel curl libffi libffi-devel gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 
     ##
@@ -98,38 +96,19 @@ if [ -f /etc/ansible-on-win.installed ]
     pip install -U -r $HOME/devops/ansible.pip.requirements.txt
     ansible --version
 
-    #Create initial Ansible hosts inventory
-    #mkdir -p /etc/ansible/
-    #echo "127.0.0.1" > /etc/ansible/hosts
-    #chmod -x /etc/ansible/hosts
-
-    #Setup Ansible from Source
-    #mkdir -p $ANSIBLE_DIR
-    #git clone git://github.com/ansible/ansible.git --recursive $ANSIBLE_DIR
-    #cd $ANSIBLE_DIR
-    #source ./hacking/env-setup
-    #cd $CURRENT_DIR
-
-	#echo "Copy Ansible Vagrant Shims to bin Directory"
-	#cp -r $HOME/ansible-on-win/ansible-playbook.bat $HOME/ansible/bin/ansible-playbook.bat
-
-    # Copy default config
-    #cp $ANSIBLE_DIR/examples/ansible.cfg ~/.ansible.cfg
-    # Use paramiko to allow passwords
-    #sed -i 's|#\?transport.*$|transport = paramiko|' ~/.ansible.cfg
-    # Disable host key checking for performance
-    #sed -i 's|#host_key_checking = False|host_key_checking = False|' ~/.ansible.cfg
-
+    ###
+    # Set Ansible-On-Window Status
+    ###
     BOOTSTRAP_ANSIBLE_UPDATE=1
+    touch /etc/ansible-on-win.installed
+
     #Set this script to run at shell startup
     #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.zshrc
     #echo "export BOOTSTRAP_ANSIBLE_UPDATE=1" >> $HOME/.zshrc
     #echo "source $HOME/ansible-on-win/ansible-bootstrap.sh" >> $HOME/.zshrc
     #echo " "
-    #echo "Remember to setup the ssh-agent."
-    #echo " "
-    #echo "Please restart MSYS-SHELL!!!!"
 
-    # touch a file to mark first app init completed
-    #touch /etc/ansible-on-win.installed
+    echo "Ansible-On-Windows Install Completed.\n"
+    echo "Remember to setup the ssh-agent.\n"
+    echo "Please restart MSYS-SHELL. \n"
 fi
