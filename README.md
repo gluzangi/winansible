@@ -22,7 +22,7 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 ##### Installation Restrictions:
 + MSYS2 can't be installed on FAT* partitions.
 + Current MSYS2 can't be installed on Windows XP anymore.
-+ To install Ansible atop Git-For-Windows would require [Git-For-Windows SDK](https://github.com/git-for-windows/build-extra/releases) to expose pacman tool. 
++ To install Ansible atop __Git-For-Windows__ would require [Git-For-Windows SDK](https://github.com/git-for-windows/build-extra/releases) to expose pacman tool. 
 
 #### Difference between MSYS2 and MinGW
 >MSYS2 refers to the libraries and programs that use the POSIX emulation layer ("msys2 runtime", derived from Cygwin's cygwin1.dll). It is very easy to port libraries and programs from Unix/Linux because most of the POSIX semantics is emulated reasonably well, for example the fork() function. Bash and Perl are examples of MSYS2 programs.
