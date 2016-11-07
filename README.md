@@ -60,6 +60,14 @@ _A Windows Installer with automated script to prepare **ALL** required packages 
  - Rethink Github Repos
  - Add Code Comments
 
+## References:
+
+- [How MSYS2 Differs From Cygwin](https://sourceforge.net/p/msys2/wiki/How%20does%20MSYS2%20differ%20from%20Cygwin/)
+- [Running Ansible On Windows](http://www.jeffgeerling.com/blog/running-ansible-within-windows)
+- [Babun - A Windows Shell ](http://babun.github.io/index.html)
+- [Ansible Running On Babun](https://github.com/tiangolo/ansible-babun-bootstrap)
+
+
 License
 ----
 
