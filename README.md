@@ -67,6 +67,7 @@ _A Windows Installer with automated script to prepare **ALL** required packages 
 - [Running Ansible On Windows](http://www.jeffgeerling.com/blog/running-ansible-within-windows)
 - [Babun - A Windows Shell ](http://babun.github.io/index.html)
 - [Ansible Running On Babun](https://github.com/tiangolo/ansible-babun-bootstrap)
+- [Install Python Packages Using PIP](https://pip.pypa.io/en/stable/reference/pip_install/#requirement-specifiers)
 
 
 License
