@@ -48,6 +48,7 @@ Mostly are SSH related features that have been observed to be missing (or need a
 +  `ControlPath` to store the “control socket” for the multiplexed connections.
 +  `ControlMaster` to activate multiplexing. SSH will try to use a master connection if one exists.
 +  `ControlPersist` to keep the master connection alive for the specified period of time after it has remained idle (no connections). After that time, the master connection will be closed.
++ Symlinks `ln -s TARGET LINK_NAME` don't seem to work on MSYS2
 
 ## For Production Environments
 _A Windows Installer with automated script to prepare **ALL** required packages to complete a fully functional Ansible-On-Windows install_
