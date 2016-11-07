@@ -106,9 +106,9 @@ if [ -f /etc/ansible-on-win.installed ]
     #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.zshrc
     #echo "export BOOTSTRAP_ANSIBLE_UPDATE=1" >> $HOME/.zshrc
     #echo "source $HOME/ansible-on-win/ansible-bootstrap.sh" >> $HOME/.zshrc
-    #echo " "
 
-    echo "Ansible-On-Windows Install Completed.\n"
-    echo "Remember to setup the ssh-agent.\n"
-    echo "Please restart MSYS-SHELL. \n"
+    echo " "
+    echo "Ansible-On-Windows Install Completed."
+    echo "Remember to setup the ssh-agent."
+    # echo "Please restart MSYS-SHELL."
 fi
