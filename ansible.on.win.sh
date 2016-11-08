@@ -37,8 +37,8 @@ else
     ##
     # Prepare Ansible On Windows Building Tools
     ##
-    pacman -Sy --noconfirm pacman
-    pacman -Sc ; pacman -Syu --noconfirm base-devel python2 python2-setuptools curl libffi libffi-devel gmp gmp-devel openssl openssl-devel git
+    pacman -Sc --noconfirm ; pacman -Sy --noconfirm pacman base-devel
+    pacman -Syu --noconfirm curl gcc gcc-libs git gmp gmp-devel libffi libffi-devel openssl openssl-devel python2 python2-setuptools
 
     ##
     # Fix Python Building Environment
@@ -49,7 +49,7 @@ else
     ###
     # Install Python PIP
     ###
-    curl https://bootstrap.pypa.io/get-pip.py | python
+    curl https://bootstrap.pypa.io/get-pip.py | python2
 
     ###
     # Use PIP To Install Ansible And Automatically Resolve Dependencies
@@ -57,6 +57,12 @@ else
     pip install -U -r $HOME/winAnsible/ansible.pip.requirements.txt
     ansible --version
 
+    ##
+    # Fix Python Building Environment
+    ##
+    echo ">> Set Up Ansible in '$HOME'"
+    cp $HOME/winAnsible/.ansible.cfg $HOME/.ansible.cfg
+ 
     ###
     # Set Ansible-On-Window Status
     ###
