@@ -29,7 +29,7 @@ if [[ -f '/etc/ansible-on-win.installed' ]]; then
     echo "Ansible-On-Windows Upgrade Completed."
     echo "Remember To Setup The ssh-agent."
 else
-   ##
+    ##
     # Fetch Ansible On Windows From The Repo
     ##
     # git clone https://gitlab.com/gluzangi/winansible.git $HOME/winAnsible
