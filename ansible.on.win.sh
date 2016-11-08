@@ -58,7 +58,7 @@ if [[ -f '/etc/ansible-on-win.installed' ]]; then
     ansible --version
 
     ##
-    # Fix Python Building Environment
+    # Add Ansible Configuration File .ansible.cfg 
     ##
     echo " "
     echo ">> SetUp Ansible In [['$HOME']]"
