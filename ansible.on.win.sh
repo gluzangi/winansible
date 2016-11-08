@@ -18,7 +18,7 @@ CURRENT_DIR=$( pwd )
 
 if [ -f /etc/ansible-on-win.installed ]
   then
-    echo "First init setting up Ansible On Win."
+    echo "Init Ansible On Win Update."
     cd $ANSIBLE_DIR
     if [ $BOOTSTRAP_ANSIBLE_UPDATE = 1 ]
      then
@@ -28,9 +28,8 @@ if [ -f /etc/ansible-on-win.installed ]
     cd $CURRENT_DIR
 
     echo " "
-    echo "Ansible-On-Windows Upgrade Completed.\n"
-    echo "Remember to setup the ssh-agent.\n"
-    echo "Please restart MSYS-SHELL. \n"
+    echo "Ansible-On-Windows Upgrade Completed."
+    echo "Remember to setup the ssh-agent."
   else
     ##
     # Fetch Ansible On Windows Related Fixes From The Repo
@@ -42,8 +41,8 @@ if [ -f /etc/ansible-on-win.installed ]
     # Prepare Ansible On Windows Building Tools
     ##
     pacman -Sy --noconfirm pacman
-    pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
-
+    pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel \
+                  openssh openssl openssl-devel git python2 python2-setuptools
     ###
     # Install Python PIP
     ###
