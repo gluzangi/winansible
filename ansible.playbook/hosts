@@ -1,7 +1,7 @@
-[cgi]
+[local]
 localhost	ansible_connection=local
 
-[machines]
+[remote]
 192.168.1.110 ansible_connection=ssh ansible_ssh_user=gluzangi
 192.168.1.200 ansible_connection=ssh ansible_ssh_user=gluzangi
 192.168.1.120 ansible_connection=ssh ansible_ssh_user=gluzangi
