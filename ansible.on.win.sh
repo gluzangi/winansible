@@ -51,7 +51,7 @@ else
     ###
     # Use PIP To Install Ansible And Automatically Resolve Dependencies
     ###
-    pip install -U -r $HOME/ansible.pip.requirements.txt
+    pip install -U -r $HOME/winAnsible/ansible.pip.requirements.txt
     ansible --version
 
     ###

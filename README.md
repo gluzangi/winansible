@@ -40,10 +40,10 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 $ pacman -Syu git
 
 # get a fresh copy of Ansible-On-Windows
-$ git clone https://gitlab.com/gluzangi/winansible.git $HOME/
+$ git clone https://gitlab.com/gluzangi/winansible.git $HOME/winAnsible
 
 # install Ansible
-$ $HOME/ansible.on.win.sh
+$ $HOME/winAnsible/ansible.on.win.sh
 ```
 ##### Known Ansible Limitation:
 Mostly are SSH related features that have been observed to be missing (or need a workaround)
