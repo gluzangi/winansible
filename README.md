@@ -59,6 +59,7 @@ _A Windows Installer with automated script to prepare **ALL** required packages 
 1) v1.0
  - ~~Complete Ansible install automation as a script ansible-on-win.sh~~
  - ~~Add Code Comments~~
+
 2) v1.1
  - Add Ansible upgrade automation as a script ansible-on-win.sh
  - Reaserch on InstallForge and alternatives for Windows Software Packaging
