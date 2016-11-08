@@ -14,27 +14,27 @@
 
 ANSIBLE_DIR=$HOME/.ansible
 
-CURRENT_DIR=$( pwd )
+CURRENT_DIR=$(pwd)
 
-if [ -f /etc/ansible-on-win.installed ]
-  then
+if [[ -f !'/etc/ansible-on-win.installed' ]]; then
     echo "Init Ansible On Win Update."
-    cd $ANSIBLE_DIR
-    if [ $BOOTSTRAP_ANSIBLE_UPDATE == 1 ]
-     then
-     echo "Performing Ansible update from source, if available."
-    fi
-    #source ./hacking/env-setup
-    cd $CURRENT_DIR
+#    cd $ANSIBLE_DIR
+#    if [[ $BOOTSTRAP_ANSIBLE_UPDATE = 1 ]];then
+#     echo "Performing Ansible update from source, if available."
+#    fi
+#    #source ./hacking/env-setup
+#    cd $CURRENT_DIR
 
     echo " "
     echo "Ansible-On-Windows Upgrade Completed."
     echo "Remember to setup the ssh-agent."
-  else
+else
     ##
     # Fetch Ansible On Windows Related Fixes From The Repo
     ##
-    git clone https://gitlab.com/gluzangi/winansible.git $HOME/
+    # git clone https://gitlab.com/gluzangi/winansible.git $HOME/
+
+    echo ">> Fix pyconfig.h First..."
     cp $HOME/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 
     ##
