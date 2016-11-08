@@ -39,7 +39,7 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 # install git on MSYS2 shell
 $ pacman -Syu git
 
-# get a fresh copy on Ansible-On-Windows
+# get a fresh copy of Ansible-On-Windows
 $ git clone https://gitlab.com/gluzangi/winansible.git $HOME/
 
 # install Ansible
