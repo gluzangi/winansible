@@ -32,10 +32,10 @@ else
     ##
     # Fetch Ansible On Windows Related Fixes From The Repo
     ##
-    # git clone https://gitlab.com/gluzangi/winansible.git $HOME/
+    # git clone https://gitlab.com/gluzangi/winansible.git $HOME/winAnsible
 
     echo ">> Fix pyconfig.h First..."
-    cp $HOME/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
+    cp $HOME/winAnsible/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 
     ##
     # Prepare Ansible On Windows Building Tools
