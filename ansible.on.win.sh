@@ -30,12 +30,9 @@ if [[ -f !'/etc/ansible-on-win.installed' ]]; then
     echo "Remember to setup the ssh-agent."
 else
     ##
-    # Fetch Ansible On Windows Related Fixes From The Repo
+    # Fetch Ansible On Windows From The Repo
     ##
     # git clone https://gitlab.com/gluzangi/winansible.git $HOME/winAnsible
-
-    echo ">> Fix pyconfig.h First..."
-    cp $HOME/winAnsible/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 
     ##
     # Prepare Ansible On Windows Building Tools
@@ -43,6 +40,13 @@ else
     pacman -Sy --noconfirm pacman
     pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel \
                   openssh openssl openssl-devel git python2 python2-setuptools
+
+    ##
+    # Fix Python Building Environment
+    ##
+    echo ">> Fix pyconfig.h First..."
+    cp $HOME/winAnsible/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
+
     ###
     # Install Python PIP
     ###
