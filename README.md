@@ -62,9 +62,9 @@ _A Windows Installer with automated script to prepare **ALL** required packages 
 
 2) v1.1
  - Add Ansible upgrade automation as a script ansible-on-win.sh
- - Reaserch on InstallForge and alternatives for Windows Software Packaging
+ - Reaserch on InstallForge and alternatives for Windows Software Packaging.
  - [Git-On-Windows Installer Generator](https://github.com/git-for-windows/build-extra)
- - Rethink Github Repos
+ - Rethink Github Repos.
 
 
 ## Ansible-On-Windows References
