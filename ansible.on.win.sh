@@ -59,7 +59,7 @@ if [ -f /etc/ansible-on-win.installed ]
     # Set Ansible-On-Window Status
     ###
     BOOTSTRAP_ANSIBLE_UPDATE=1
-    echo '1' >> /etc/ansible-on-win.installed
+    echo '1' > /etc/ansible-on-win.installed
 
     #Set this script to run at shell startup
     #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.bashshrc
@@ -69,5 +69,4 @@ if [ -f /etc/ansible-on-win.installed ]
     echo " "
     echo "Ansible-On-Windows Install Completed."
     echo "Remember to setup the ssh-agent."
-    # echo "Please restart MSYS-SHELL."
 fi
