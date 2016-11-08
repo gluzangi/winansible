@@ -17,19 +17,19 @@ ANSIBLE_DIR=$HOME/.ansible
 CURRENT_DIR=$(pwd)
 
 if [[ -f '/etc/ansible-on-win.installed' ]]; then
-#    echo "Init Ansible On Win Update."
-#    cd $ANSIBLE_DIR
-#    if [[ $BOOTSTRAP_ANSIBLE_UPDATE = 1 ]];then
-#     echo "Performing Ansible update from source, if available."
-#    fi
-#    #source ./hacking/env-setup
-#    cd $CURRENT_DIR
-#
-#    echo " "
-#    echo "Ansible-On-Windows Upgrade Completed."
-#    echo "Remember to setup the ssh-agent."
-#else
-    ##
+    echo "Init Ansible On Win Update."
+    cd $ANSIBLE_DIR
+    if [[ $BOOTSTRAP_ANSIBLE_UPDATE = 1 ]];then
+     echo "Performing Ansible update from source, if available."
+    fi
+    #source ./hacking/env-setup
+    cd $CURRENT_DIR
+
+    echo " "
+    echo "Ansible-On-Windows Upgrade Completed."
+    echo "Remember To Setup The ssh-agent."
+else
+   ##
     # Fetch Ansible On Windows From The Repo
     ##
     # git clone https://gitlab.com/gluzangi/winansible.git $HOME/winAnsible
@@ -67,8 +67,8 @@ if [[ -f '/etc/ansible-on-win.installed' ]]; then
     ###
     # Set Ansible-On-Window Status
     ###
-    BOOTSTRAP_ANSIBLE_UPDATE=1
-    echo '1' > /etc/ansible-on-win.installed
+    #BOOTSTRAP_ANSIBLE_UPDATE=1
+    #echo '1' > /etc/ansible-on-win.installed
 
     #Set this script to run at shell startup
     #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.bashrc
@@ -77,5 +77,5 @@ if [[ -f '/etc/ansible-on-win.installed' ]]; then
 
     echo " "
     echo "Ansible-On-Windows Install Completed."
-    echo "Remember to setup the ssh-agent."
+    echo "Remember To Setup The ssh-agent."
 fi
