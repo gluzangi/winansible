@@ -22,7 +22,7 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 ##### Installation Restrictions:
 + MSYS2 can't be installed on FAT* partitions.
 + Current MSYS2 can't be installed on Windows XP anymore.
-+ To install Ansible atop __Git-For-Windows__ would require [Git-For-Windows SDK](https://github.com/git-for-windows/build-extra/releases) to expose __pacman__ tool. 
++ To install Ansible atop __Git-For-Windows__ would require [Git-For-Windows SDK](https://github.com/git-for-windows/build-extra/releases) to expose __pacman__ tool.
 
 #### Difference between MSYS2 and MinGW
 >MSYS2 refers to the libraries and programs that use the POSIX emulation layer ("msys2 runtime", derived from Cygwin's cygwin1.dll). It is very easy to port libraries and programs from Unix/Linux because most of the POSIX semantics is emulated reasonably well, for example the fork() function. Bash and Perl are examples of MSYS2 programs.
@@ -39,9 +39,9 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 $ pacman -Sy pacman
 $ pacman -Syu base-devel libffi libffi-devel pkg-config gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 $ git clone https://gitlab.com/gluzangi/winansible.git $HOME/
-$ cp $HOME/devops/ansible.localhost/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
+$ cp $HOME/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 $ curl https://bootstrap.pypa.io/get-pip.py | python
-$ pip install -U -r $HOME/devops/ansible.pip.requirements.txt
+$ pip install -U -r $HOME/ansible.pip.requirements.txt
 $ ansible --version
 ```
 ##### Known Ansible Limitation:

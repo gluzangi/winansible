@@ -52,9 +52,6 @@ if [ -f /etc/ansible-on-win.installed ]
     if [ $BOOTSTRAP_ANSIBLE_UPDATE = 1 ]
      then
      echo "Performing Ansible update from source, if available."
-     #Setup rebase Ansible
-     #git pull --rebase
-     #git submodule update --init --recursive
     fi
     #source ./hacking/env-setup
     cd $CURRENT_DIR
@@ -63,27 +60,17 @@ if [ -f /etc/ansible-on-win.installed ]
     echo "Remember to setup the ssh-agent.\n"
     echo "Please restart MSYS-SHELL. \n"
   else
-    #Replace babun sudo with new fake sudo for Ansible, throwing way all sudo args.
-    #echo "#!/usr/bin/env bash" > /usr/bin/sudo
-    #echo "count=0" >> /usr/bin/sudo
-    #echo "for var in "$@"" >> /usr/bin/sudo
-    #echo "  do" >> /usr/bin/sudo
-    #echo "    (( count++ ))" >> /usr/bin/sudo
-    #echo "  done" >> /usr/bin/sudo
-    #echo "shift $count" >> /usr/bin/sudo
-    #echo "exec "$@"" >> /usr/bin/sudo
-
     ##
     # Install Ansible On Windows Packages To Resolve Library Dependencies
     ##
-    # pacman -Sy --noconfirm pacman
+    pacman -Sy --noconfirm pacman
     pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 
     ##
     # Fetch Ansible On Windows Related Fixes From The Repo
     ##
     git clone https://gitlab.com/gluzangi/winansible.git $HOME/
-    cp $HOME/devops/ansible.localhost/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
+    cp $HOME/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 
     ###
     # Install Python PIP
@@ -93,17 +80,17 @@ if [ -f /etc/ansible-on-win.installed ]
     ###
     # Use PIP to install Ansible And Automatically Resolve Dependencies
     ###
-    pip install -U -r $HOME/devops/ansible.pip.requirements.txt
+    pip install -U -r $HOME/ansible.pip.requirements.txt
     ansible --version
 
     ###
     # Set Ansible-On-Window Status
     ###
-    #BOOTSTRAP_ANSIBLE_UPDATE=1
-    #touch /etc/ansible-on-win.installed
+    BOOTSTRAP_ANSIBLE_UPDATE=1
+    echo '1' >> /etc/ansible-on-win.installed
 
     #Set this script to run at shell startup
-    #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.zshrc
+    #echo "# If you don't want to update Ansible every time set BOOTSTRAP_ANSIBLE_UPDATE=0" >> $HOME/.bashshrc
     #echo "export BOOTSTRAP_ANSIBLE_UPDATE=1" >> $HOME/.zshrc
     #echo "source $HOME/ansible-on-win/ansible-bootstrap.sh" >> $HOME/.zshrc
 
