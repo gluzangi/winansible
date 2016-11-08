@@ -36,13 +36,14 @@ To port Ansible and make it run on Windows requires a number of tools to create 
 ## Ansible On Windows Installation
 
 ```sh
-$ pacman -Sy pacman
-$ pacman -Syu base-devel libffi libffi-devel pkg-config gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
+# install git on MSYS2 shell
+$ pacman -Syu git
+
+# get a fresh copy on Ansible-On-Windows
 $ git clone https://gitlab.com/gluzangi/winansible.git $HOME/
-$ cp $HOME/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
-$ curl https://bootstrap.pypa.io/get-pip.py | python
-$ pip install -U -r $HOME/ansible.pip.requirements.txt
-$ ansible --version
+
+# install Ansible
+$ $HOME/ansible.on.win.sh
 ```
 ##### Known Ansible Limitation:
 Mostly are SSH related features that have been observed to be missing (or need a workaround)

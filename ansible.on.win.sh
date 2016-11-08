@@ -34,7 +34,7 @@ if [ -f /etc/ansible-on-win.installed ]
     ##
     # Fetch Ansible On Windows Related Fixes From The Repo
     ##
-    git clone https://gitlab.com/gluzangi/winansible.git $HOME/
+    # git clone https://gitlab.com/gluzangi/winansible.git $HOME/
     cp $HOME/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
 
     ##
