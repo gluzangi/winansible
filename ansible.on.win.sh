@@ -45,11 +45,12 @@ else
     ##
     echo ">> Fix pyconfig.h First..."
     cp $HOME/winAnsible/ansible.playbook/roles/box/files/pyconfig.h /usr/include/python2.7/pyconfig.h
+    ln -s /usr/bin/python2 /usr/bin/python
 
     ###
     # Install Python PIP
     ###
-    curl https://bootstrap.pypa.io/get-pip.py | python2
+    curl https://bootstrap.pypa.io/get-pip.py | python
 
     ###
     # Use PIP To Install Ansible And Automatically Resolve Dependencies
