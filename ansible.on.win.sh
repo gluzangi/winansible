@@ -20,7 +20,7 @@ if [ -f /etc/ansible-on-win.installed ]
   then
     echo "Init Ansible On Win Update."
     cd $ANSIBLE_DIR
-    if [ $BOOTSTRAP_ANSIBLE_UPDATE = 1 ]
+    if [ $BOOTSTRAP_ANSIBLE_UPDATE == 1 ]
      then
      echo "Performing Ansible update from source, if available."
     fi
