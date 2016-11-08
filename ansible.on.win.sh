@@ -38,8 +38,7 @@ else
     # Prepare Ansible On Windows Building Tools
     ##
     pacman -Sy --noconfirm pacman
-    pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel \
-                  openssh openssl openssl-devel git python2 python2-setuptools
+    pacman -Syu --noconfirm base-devel curl libffi libffi-devel gmp gmp-devel openssh openssl openssl-devel git python2 python2-setuptools
 
     ##
     # Fix Python Building Environment
